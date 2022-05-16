@@ -60,17 +60,29 @@
 #radio_button-1:checked~.mems__images>.mems__slider__wrapper {
     margin-left: 0%;
 }
+#radio_button-1:checked~.text-content__wrapper>.text-slider {
+    margin-left: 0%;
+}
 #radio_button-2:checked~.mems__images>.mems__slider__wrapper {
+    margin-left: -100%;
+}
+#radio_button-2:checked~.text-content__wrapper>.text-slider {
     margin-left: -100%;
 }
 #radio_button-3:checked~.mems__images>.mems__slider__wrapper {
     margin-left: -200%;
 }
+#radio_button-3:checked~.text-content__wrapper>.text-slider {
+    margin-left: -200%;
+}
 #radio_button-4:checked~.mems__images>.mems__slider__wrapper {
     margin-left: -300%;
 }
+#radio_button-4:checked~.text-content__wrapper>.text-slider {
+    margin-left: -300%;
+}
 
-/* input[type=radio] {
+/* .radio_button {
     position: absolute;
     visibility: hidden;
 } */
