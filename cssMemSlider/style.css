@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    background: rgb(250, 18, 250);
 }
 .mem-slider__wrapper {
     margin: 5vw auto;
     width: 50rem;
     height: 40rem;
-    background-color: grey;
+    background-color: rgb(250, 18, 250);
     display: flex;
     overflow: hidden;
     justify-content: space-evenly;
@@ -43,7 +44,7 @@
 }
 
 .text-slider {
-    width: 400%;
+    width: 200rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -53,36 +54,40 @@
 
 .text {
     text-align: start;
-    width: 25%;
-    font-size: 1.5rem;
+    width: 50rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family:  Tahoma, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
+    color: azure;
 }
 
 #radio_button-1:checked~.mems__images>.mems__slider__wrapper {
-    margin-left: 0%;
+    margin-left: 0;
 }
 #radio_button-1:checked~.text-content__wrapper>.text-slider {
-    margin-left: 0%;
+    margin-left: 0;
 }
 #radio_button-2:checked~.mems__images>.mems__slider__wrapper {
-    margin-left: -100%;
+    margin-left: -50rem;
 }
 #radio_button-2:checked~.text-content__wrapper>.text-slider {
-    margin-left: -100%;
+    margin-left: -50rem;
 }
 #radio_button-3:checked~.mems__images>.mems__slider__wrapper {
-    margin-left: -200%;
+    margin-left: -100rem;
 }
 #radio_button-3:checked~.text-content__wrapper>.text-slider {
-    margin-left: -200%;
+    margin-left: -100rem;
 }
 #radio_button-4:checked~.mems__images>.mems__slider__wrapper {
-    margin-left: -300%;
+    margin-left: -150rem;
 }
 #radio_button-4:checked~.text-content__wrapper>.text-slider {
-    margin-left: -300%;
+    margin-left: -150rem;
 }
 
-/* .radio_button {
+.radio_button {
     position: absolute;
     visibility: hidden;
-} */
+}
