@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,48 @@
     <title>Mem Slider</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="mem-slider__wrapper">
+
         <div class="mems__images">
+            <div class="mems__slider__wrapper">
             <img class="mem-image" src="../cssMemSlider/mems/garold_mem.jpg" alt="garold_mem">
             <img class="mem-image" src="../cssMemSlider/mems/drujko_mem.jpg" alt="drujko_mem">
             <img class="mem-image" src="../cssMemSlider/mems/lapenko_mem.jpg" alt="lapenko_mem">
             <img class="mem-image" src="../cssMemSlider/mems/boromir_mem.jpg" alt="boromir_mem">
-        </div>
-        <div class="text-controls">
-            <div class="radio__buttons">
-                <input id="radio_button-1" type="radio" name="radio_button-1">
-                <label for="radio__button-1"></label>
-                <input id="radio_button-2" type="radio" name="radio_button-2">
-                <label for="radio__button-2"></label>
-                <input id="radio_button-3" type="radio" name="radio_button-3">
-                <label for="radio__button-3"></label>
-                <input id="radio_button-4" type="radio" name="radio_button-4">
-                <label for="radio__button-4"></label>
-            </div>
-            <div class="text-content">
-                <span>Garold-mem</span>
-                <span>Drujko-mem</span>
-                <span>Lapenko-mem</span>
-                <span>Boromir-mem</span>
             </div>
         </div>
+
+        <div class="radio_buttons__wrapper">
+            <div class="radio_button-pointer">
+                <input class="radio_button" id="radio_button-1" type="radio" name="radio_button" value="mem1" checked>
+                <label for="radio_button-1"></label>
+            </div>
+            <div class="radio_button-pointer">
+                <input class="radio_button" id="radio_button-2" type="radio" name="radio_button" value="mem2">
+                <label for="radio_button-2"></label>
+            </div>
+            <div class="radio_button-pointer">
+                <input class="radio_button" id="radio_button-3" type="radio" name="radio_button" value="mem3">
+                <label for="radio_button-3"></label>
+            </div>
+            <div class="radio_button-pointer">
+                <input class="radio_button" id="radio_button-4" type="radio" name="radio_button" value="mem4">
+                <label for="radio_button-4"></label>
+            </div>
+        </div>
+
+        <div class="text-content__wrapper">
+            <div class="text-slider">
+            <div class="text">Garold-mem</div>
+            <div class="text">Drujko-mem</div>
+            <div class="text">Lapenko-mem</div>
+            <div class="text">Boromir-mem</div>
+            </div>
+        </div>
+
     </div>
 </body>
+
 </html>
