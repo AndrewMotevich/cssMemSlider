@@ -116,9 +116,6 @@
     border: 0.2rem solid rgb(235, 252, 6);
 }
 
-/* #radio_button-1~.radio_buttons__wrapper :nth-child(1)>*>*>* {
-    background-color: rgb(94, 255, 0);
-} */
 #radio_button-1:checked~.radio_buttons__wrapper .control-1 {
     background-color: rgb(94, 255, 0);
 }
@@ -130,4 +127,16 @@
 }
 #radio_button-4:checked~.radio_buttons__wrapper .control-4 {
     background-color: rgb(94, 255, 0);
+}
+
+@media only screen and (max-width: 800px) {
+    .radio_buttons__wrapper {
+        order: 0;
+    }
+    .mem-slider__wrapper{
+        flex-flow: column;
+    }
+    .text-content__wrapper{
+        align-self: baseline;
+    }
 }
