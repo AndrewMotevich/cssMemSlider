@@ -31,6 +31,8 @@
 .radio_buttons__wrapper {
     display: flex;
     order: 1;
+    width: 25%;
+    justify-content: space-between;
 }
 
 .mem-image{
@@ -90,4 +92,42 @@
 .radio_button {
     position: absolute;
     visibility: hidden;
+}
+
+.control {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    background-color: aqua;
+    border: 0.2rem solid slateblue;
+}
+
+.zone {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.zone:hover {
+    cursor: pointer;
+}
+
+.zone:hover>.control {
+    background-color: rgb(235, 252, 6);
+    border: 0.2rem solid rgb(235, 252, 6);
+}
+
+/* #radio_button-1~.radio_buttons__wrapper :nth-child(1)>*>*>* {
+    background-color: rgb(94, 255, 0);
+} */
+#radio_button-1:checked~.radio_buttons__wrapper .control-1 {
+    background-color: rgb(94, 255, 0);
+}
+#radio_button-2:checked~.radio_buttons__wrapper .control-2 {
+    background-color: rgb(94, 255, 0);
+}
+#radio_button-3:checked~.radio_buttons__wrapper .control-3 {
+    background-color: rgb(94, 255, 0);
+}
+#radio_button-4:checked~.radio_buttons__wrapper .control-4 {
+    background-color: rgb(94, 255, 0);
 }
