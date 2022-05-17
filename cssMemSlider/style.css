@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: rgb(250, 18, 250);
+}
+.mem-slider__wrapper {
+    margin: 5vw auto;
+    width: 50rem;
+    height: 40rem;
+    background-color: rgb(250, 18, 250);
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mems__images {
+    width: 100%;
+}
+
+.mems__slider__wrapper {
+    margin-left: 0;
+    display: flex;
+    width: 200rem;
+    height: 30rem;
+    transition: all 2s;
+}
+
+.radio_buttons__wrapper {
+    display: flex;
+    order: 1;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.mem-image{
+    width: 50rem;
+    border-radius: 2rem;
+}
+
+.text-content__wrapper{
+    width: 60%;
+    overflow-x: hidden;
+}
+
+.text-slider {
+    width: 200rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0%;
+    transition: all 2s;
+}
+
+.text {
+    text-align: start;
+    width: 50rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family:  Tahoma, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
+    color: azure;
+}
+
+#radio_button-1:checked~.mems__images>.mems__slider__wrapper {
+    margin-left: 0;
+}
+#radio_button-1:checked~.text-content__wrapper>.text-slider {
+    margin-left: 0;
+}
+#radio_button-2:checked~.mems__images>.mems__slider__wrapper {
+    margin-left: -50rem;
+}
+#radio_button-2:checked~.text-content__wrapper>.text-slider {
+    margin-left: -50rem;
+}
+#radio_button-3:checked~.mems__images>.mems__slider__wrapper {
+    margin-left: -100rem;
+}
+#radio_button-3:checked~.text-content__wrapper>.text-slider {
+    margin-left: -100rem;
+}
+#radio_button-4:checked~.mems__images>.mems__slider__wrapper {
+    margin-left: -150rem;
+}
+#radio_button-4:checked~.text-content__wrapper>.text-slider {
+    margin-left: -150rem;
+}
+
+.radio_button {
+    position: absolute;
+    visibility: hidden;
+}
+
+.control {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    background-color: aqua;
+    border: 0.2rem solid slateblue;
+}
+
+.zone {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.zone:hover {
+    cursor: pointer;
+}
+
+.zone:hover>.control {
+    background-color: rgb(235, 252, 6);
+    border: 0.2rem solid rgb(235, 252, 6);
+}
+
+#radio_button-1:checked~.radio_buttons__wrapper .control-1 {
+    background-color: rgb(94, 255, 0);
+}
+#radio_button-2:checked~.radio_buttons__wrapper .control-2 {
+    background-color: rgb(94, 255, 0);
+}
+#radio_button-3:checked~.radio_buttons__wrapper .control-3 {
+    background-color: rgb(94, 255, 0);
+}
+#radio_button-4:checked~.radio_buttons__wrapper .control-4 {
+    background-color: rgb(94, 255, 0);
+}
+
+@media only screen and (max-width: 800px) {
+    .radio_buttons__wrapper {
+        order: 0;
+    }
+    .mem-slider__wrapper{
+        flex-flow: column;
+    }
+    .text-content__wrapper{
+        align-self: baseline;
+    }
+    html {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 38%;
+    }
+}
