@@ -1,2 +1,2 @@
 # cssMemSlider
-## [Mem Slider](cssMemSlider/index.html)
+## [Mem Slider](https://andrewmotevich.github.io/cssMemSlider/cssMemSlider/index.html)
